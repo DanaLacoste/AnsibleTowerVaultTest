@@ -4,9 +4,11 @@ Testing an Ansible Vault issue
 Vault Password: TestMe
 
 Running from command line (Ansible 2.0.1) :
+
 > ansible-playbook -i testhosts tester.yml -e "hosts=Dev1.Linux" --ask-vault-pass --private-key=~/.ssh/id_rsa
 
 Running from Tower :
+
 1. Add project
 2. Add inventory named Dev.All
 3. Add child group Dev1.All in Dev.All
