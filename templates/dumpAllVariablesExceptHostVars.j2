@@ -1,0 +1,19 @@
+dictionary environment_variables:
+--------------------------------
+{{ vars.environment_configuration | to_nice_json }} 
+
+dictionary environment_credentials:
+--------------------------------
+{{ vars.environment_credentials | to_nice_json }} 
+
+Environment Variables ("environment"):
+--------------------------------
+{{ environment | to_nice_json }} 
+
+GROUP NAMES Variables ("group_names"):
+--------------------------------
+{{ group_names | to_nice_json }}
+
+GROUPS Variables ("groups"):
+--------------------------------
+{{ groups | to_nice_json }}

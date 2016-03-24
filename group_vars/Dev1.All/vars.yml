@@ -1,0 +1,5 @@
+---
+# ENV: Dev1
+environment_configuration:
+  DB_NAME: Dev1_DB
+  DB_PORT: 3306

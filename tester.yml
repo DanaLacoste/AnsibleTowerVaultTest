@@ -1,0 +1,20 @@
+---
+- hosts: "{{ hosts }}"
+
+  gather_facts: true
+
+  vars:
+
+  pre_tasks:
+
+  tasks:
+    # Debug:
+     - name: Dump environment dictionary
+       debug: var=environment_configuration
+    # CONTAINS PASSWORDS.  Only for debugging
+     - name: Dump credentials dictionary
+       debug: var=environment_credentials
+
+  post_tasks:
+
+  roles:

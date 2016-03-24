@@ -1,0 +1,15 @@
+localhost
+windows-host
+
+[Dev.All:children]
+Dev1.All
+
+[Dev1.All:children]
+Dev1.Windows
+Dev1.Linux
+
+[Dev1.Windows]
+windows-host
+
+[Dev1.Linux]
+localhost
