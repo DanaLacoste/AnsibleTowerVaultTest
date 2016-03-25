@@ -8,12 +8,13 @@
   pre_tasks:
 
   tasks:
+    - include_vars: group_vars/Dev.All/vault.yml
     # Debug:
-     - name: Dump environment dictionary
-       debug: var=environment_configuration
+    - name: Dump environment dictionary
+      debug: var=environment_configuration
     # CONTAINS PASSWORDS.  Only for debugging
-     - name: Dump credentials dictionary
-       debug: var=environment_credentials
+    - name: Dump credentials dictionary
+      debug: var=environment_credentials
 
   post_tasks:
 
