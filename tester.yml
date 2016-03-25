@@ -8,7 +8,8 @@
   pre_tasks:
 
   tasks:
-    - include_vars: group_vars/Dev.All/vault.yml
+    - name: Manually load the vault
+      include_vars: group_vars/Dev.All/vault.yml
     # Debug:
     - name: Dump environment dictionary
       debug: var=environment_configuration
